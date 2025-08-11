@@ -10,7 +10,7 @@ function Book(ID, title, author, pages) {
 
 function addBookToLibrary(title, author, pages) { 
     myLibrary.push(new Book(crypto.randomUUID(), title, author, pages));
-    console.log(myLibrary);
+    
 }
 
 /* loop through the library array elements and create table elements every time
@@ -41,8 +41,6 @@ function updateTable() {
             updateTable();
         });
         
-        
-
         });
 
 }
