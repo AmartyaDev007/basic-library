@@ -8,6 +8,62 @@
     <script src="code.js" defer></script>
 </head>
 <body>
+
+    <div class="dialog">
+        <dialog>
+            
+            <div id="dialog-title-text">Enter Book Data</div>
+            <form method="dialog">
+               
+                <div>
+                    <label for="book-name">Book Name</label>
+                    <input type="text" id="book-name" required>
+                </div>
+
+                <div>
+                    <label for="book-author">Author</label>
+                    <input type="text" id="book-author" required>
+                </div>
+
+                <div>
+                    <label for="pages">Page Count</label>
+                    <input type="number" max="11000" id="pages" required>
+                </div>
+                <div>
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="reset" id="reset-button">Reset</button>
+                    <button type="button" id="cancel-button">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
     
+    <div class="container">
+        
+        <div class="header"> 
+            <h1>Your Book Collection</h1>
+            <button id="show-button">Add Book</button>
+        </div>
+
+        <div class="main">
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Pages</th> 
+                        <th></th>
+                    </tr>    
+                </thead>
+                
+                <tbody>
+                </tbody>
+                
+            </table>
+        </div>
+        </div>
+    </div>
+
 </body>
 </html>

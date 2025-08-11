@@ -1,0 +1,176 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Karla; /* TODO: add more fonts here */
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    height: 100px;
+    align-items: center;
+}
+
+
+.header > button { 
+    width: 100px;
+    height: 24px;
+
+}
+.cards-box { 
+   
+    flex: 1;
+    flex-wrap: wrap;
+}
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+form > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input { 
+    height: 20px;
+    border: 2px solid grey;
+}
+
+form label {
+    min-width: 100px; /* Adjust as needed */
+    text-align: left;
+}
+
+
+form button { 
+    width: 80px;
+    height: 24px;
+    border-radius: 4px;
+    
+}
+
+#submit-button { 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#submit-button:hover { 
+    background-color: #45a049; 
+}
+
+#reset-button { 
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#reset-button:hover { 
+    background-color: #b02926; 
+}
+
+#cancel-button { 
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#cancel-button:hover { 
+    background-color: #007B9E; 
+}
+
+#dialog-title-text { 
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#show-button { 
+    width: 100px;
+    height: 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+
+/* table styling section */
+
+table { 
+    width: 100%;
+    text-align: center;
+    text-overflow: ellipsis;
+    table-layout: fixed;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-weight: bold;
+
+}
+
+td, th { 
+    padding: 20px;
+    max-width: 150px; /* limit width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap; /* no wrapping */
+    border: solid grey;
+}
+
+thead tr { 
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+tr :nth-child(1) {
+    width: 5%;
+    
+}
+
+tr :last-child { 
+    width: 10%;
+    border-style: none;;
+}
+
+tr :last-child > button { 
+    border: solid red;
+    width: 100px;
+    height: 24px;
+    border-radius: 4px;
+    
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+tr :last-child > button:hover { 
+    background-color: #b02926; 
+}
+/* modal styling section */
+
+dialog[open] { 
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid black;
+    padding: 20px;
+}
